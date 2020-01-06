@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" /> <!-- type de caractère -->
+        <link rel="stylesheet" href="css/2.css">
+        <title>tableu et formulaire</title>        
+    </head>
+
+    <body>
+    	<table>
+    		 <tr>
+    		 	<th></th>
+    			<th>roman</th>
+    			<th>BD</th>
+    			<th>manga</th>
+    		</tr>
+
+    		<tr>
+    			<th>paul</th>
+    			<td>oui</td>
+    			<td>non</td>
+    			<td>non</td>
+    		</tr>
+
+    		<tr>
+    			<th>didi</th>
+    			<td>oui</td>
+    			<td>oui</td>
+    			<td>non</td>
+    		</tr>
+
+			<tr>
+				<th>bob</th>
+    			<td>oui</td>
+    			<td>non</td>
+    			<td>oui</td>
+    		</tr>
+    	</table>
+    	
+__________________________________________________________________________________________
+
+		<form method="post" action="traitement.php">
+
+   			<p>
+                <fieldset id="qui">
+                    <legend>Toi t'es qui?</legend>
+
+   				     <label for="pseudo">ton nom :</label> 
+                    <input type="text" name="pseudo" id="pseudo" placeholder="Ex: Paupaul" size="30" maxlength="10" />
+
+                    <br>
+                    <br>
+                    <label for="pass">mot de passe</label>
+                    <input type="password" name="passe" id="pass" placeholder="ton mot de passe" size="20" maxlength="5"> <br> <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>T'en pence quoi</legend>
+
+                    <label for="pence" >que pence tu de tout sa ?</label> <br>
+                    <textarea name="pence" id="pence" placeholder="dit ce que tu pence de toute cette merde!!"></textarea><br> <br>
+                </fieldset>
+
+                <fieldset>
+                        <legend>Plus sur toi</legend>
+
+                    <label for="date">date de naissance:</label>
+                    <input type="date" name="date" id="date"><br><br>
+
+                    <label for="enfant">nombre d'enfant a charge:</label>
+                    <input type="number" name="enfant" id="enfant" placeholder="0" ><br><br>
+
+                    <label>couleur de peau :</label>
+                    <input type="color" /><br><br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Et apres</legend>
+
+                    Choisi un truc mec !<br>
+                    <input type="checkbox" name="cabo" id="cabo" checked="" /> <label for="cabo">Cabo</label> <br>
+                    <input type="checkbox" name="cabo" id="cabo" /> <label for="cabo">Cabo</label> <br>
+                    <input type="checkbox" name="cabo" id="cabo" /> <label for="cabo">Cabo</label> <br>
+                    <input type="checkbox" name="cabo" id="cabo" /> <label for="cabo">Cabo</label> <br><br>
+
+                    Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+                    <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
+                    <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label>   <br />
+                    <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label>   <br />
+                    <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</  label><br><br>
+
+                <label for="ville">Ville de naissance</label>
+                    <select name="ville" id="ville">
+                    <optgroup label="ici">
+                        <option value="Fofana">Fofana</option>
+                        <option value="Yaounda" selected="">Yaounda</option>
+                    </optgroup>
+
+                        <optgroup label="laba">
+                        <option value="GOLF">Golf</option>
+                    </optgroup>
+                    </select><br><br>
+
+                        <input type="reset" name="reset" value="recommencer">
+                </fieldset>
+                <br><br>
+
+                <input type="submit" name="envoyer" value="Envoyer cette merde">
+
+   			</p>
+
+        <audio src="hype_home.mp3" controls></audio>
+
+        <video src="sintel.webm" controls poster="sintel.jpg" width="600"></video>
+		</form>
+
+    </body>
+
+</html>
